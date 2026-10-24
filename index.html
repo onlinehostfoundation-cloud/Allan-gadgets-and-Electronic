@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101828">
+<title>Allan Gadgets & Electronics</title>
+<meta name="description" content="Discover gadgets, phone accessories and electronics at Allan Gadgets & Electronics. Browse products and send an order enquiry.">
+<style>
+:root{--ink:#101828;--muted:#667085;--blue:#2563eb;--cyan:#22d3ee;--paper:#f6f8fc;--line:#e4e7ec}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}
+.wrap{width:min(1120px,92%);margin:auto}.topbar{background:#0b1220;color:#d0d5dd;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.5px}.logo{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;color:#07111e;background:linear-gradient(135deg,var(--cyan),#60a5fa);font-size:21px}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:1.6px;text-transform:uppercase;margin-top:2px}
+.navlinks{display:flex;gap:24px;color:#475467;font-size:14px}.navlinks a:hover{color:var(--blue)}.cartbtn,.primary{border:0;border-radius:12px;background:var(--blue);color:white;padding:12px 17px;font-weight:750;box-shadow:0 5px 14px #2563eb24}.cartbtn span{background:#fff;color:var(--blue);border-radius:50px;padding:2px 7px;margin-left:5px}
+.hero{background:radial-gradient(ellipse at 80% 25%,#1d4ed855,transparent 36%),linear-gradient(125deg,#0b1220,#101e39 65%,#123b63);color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;padding:76px 0 82px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#a5f3fc;background:#ffffff12;border:1px solid #ffffff24;padding:8px 12px;border-radius:100px;font-size:12px;font-weight:750;letter-spacing:1px;text-transform:uppercase}.hero h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04;letter-spacing:-2.5px;margin:20px 0}.hero h1 em{font-style:normal;color:#67e8f9}.hero p{color:#cbd5e1;line-height:1.75;max-width:520px;font-size:16px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.secondary{border:1px solid #ffffff55;background:#ffffff0c;color:white;border-radius:12px;padding:12px 17px;font-weight:750}.hero-points{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#d0d5dd;font-size:12px}.hero-points b{color:#fff}.showcase{min-height:350px;display:grid;place-items:center;position:relative}.orb{width:min(330px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 25%,#a5f3fc,#3b82f6 38%,#172554 72%);box-shadow:0 0 80px #38bdf855;display:grid;place-items:center;transform:rotate(-8deg)}.device{width:135px;height:235px;border:6px solid #dbeafe;border-radius:28px;background:linear-gradient(145deg,#0f172a,#1e40af);box-shadow:18px 25px 40px #0008;display:grid;place-items:center;position:relative}.device:before{content:"";position:absolute;top:7px;width:48px;height:9px;background:#dbeafe;border-radius:9px}.device span{font-size:58px;filter:drop-shadow(0 5px 12px #22d3ee99)}.float-card{position:absolute;background:#fff;color:var(--ink);padding:13px 16px;border-radius:15px;box-shadow:0 12px 35px #0004;font-size:13px;font-weight:800}.float-card small{display:block;color:var(--muted);font-weight:500;margin-top:3px}.fc1{top:28px;right:0}.fc2{bottom:28px;left:0}
+.benefits{border-bottom:1px solid var(--line)}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:24px 0}.benefit{display:flex;gap:12px;align-items:center}.benefit-icon{width:42px;height:42px;display:grid;place-items:center;background:#eff6ff;border-radius:13px;font-size:20px}.benefit b{font-size:13px}.benefit small{display:block;color:var(--muted);margin-top:4px;font-size:12px}
+section.products{padding:72px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}.kicker{font-size:12px;font-weight:850;letter-spacing:1.8px;text-transform:uppercase;color:var(--blue)}h2{font-size:clamp(28px,4vw,39px);letter-spacing:-1.2px;margin:9px 0}.section-head p{color:var(--muted);margin:0;line-height:1.6}
+.tools{display:flex;gap:12px;margin-bottom:25px;flex-wrap:wrap}.search{flex:1;min-width:200px;border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:#fff}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#fff;color:#475467;border-radius:10px;padding:11px 14px;font-size:13px;font-weight:700}.filter.active,.filter:hover{background:#eff6ff;border-color:#bfdbfe;color:#1d4ed8}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,box-shadow .2s;background:white}.product:hover{transform:translateY(-4px);box-shadow:0 15px 35px #10182812}.product-art{height:175px;display:grid;place-items:center;background:linear-gradient(145deg,#eff6ff,#f8fafc);font-size:65px;position:relative}.product-art:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;background:#bfdbfe55;filter:blur(18px)}.product-art span{z-index:1;filter:drop-shadow(0 9px 8px #10182820)}.tag{position:absolute;top:12px;left:12px;z-index:2;background:#dcfce7;color:#166534;font-size:10px;font-weight:850;text-transform:uppercase;padding:6px 8px;border-radius:6px;letter-spacing:.5px}.product-info{padding:16px}.product-category{font-size:10px;color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:1px}.product h3{font-size:15px;margin:7px 0}.desc{color:var(--muted);font-size:12px;line-height:1.5;min-height:36px}.price-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:15px}.price{font-weight:850;font-size:17px}.add{border:0;background:var(--ink);color:white;border-radius:9px;padding:9px 12px;font-weight:800}.add:hover{background:var(--blue)}.note{margin-top:18px;font-size:12px;color:var(--muted)}
+.about{background:var(--paper);padding:68px 0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about h2{max-width:480px}.about p{color:#475467;line-height:1.8}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.tick{font-size:13px;font-weight:700}.tick span{color:#16a34a;margin-right:7px}.about-card{background:linear-gradient(145deg,#0b1220,#1e3a8a);color:#fff;border-radius:24px;padding:30px;min-height:275px;display:flex;flex-direction:column;justify-content:space-between}.about-card .big{font-size:58px}.about-card p{color:#dbeafe}
+.contact{padding:70px 0}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px}.contact-info p{color:var(--muted);line-height:1.7}.contact-item{display:flex;gap:12px;margin-top:22px}.contact-item .ico{width:40px;height:40px;border-radius:12px;background:#eff6ff;display:grid;place-items:center}.contact-item small{display:block;color:var(--muted);margin-top:4px}.form{border:1px solid var(--line);padding:24px;border-radius:20px;box-shadow:0 12px 35px #10182808}.form label{display:block;font-size:12px;font-weight:800;margin:13px 0 7px}.form input,.form select,.form textarea{width:100%;border:1px solid #d0d5dd;border-radius:10px;padding:12px;background:#fff}.form textarea{min-height:100px;resize:vertical}.form button{margin-top:15px;width:100%}.form-note{font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px}
+footer{background:#0b1220;color:#d0d5dd;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:12px}.footer-row a{color:#a5f3fc}.cart-panel{position:fixed;inset:0;z-index:10;background:#0b122099;display:none;justify-content:flex-end}.cart-panel.open{display:flex}.cart{background:white;width:min(420px,100%);height:100%;padding:24px;display:flex;flex-direction:column;box-shadow:-15px 0 50px #0002}.cart-head{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#f2f4f7;border-radius:10px;padding:9px 12px}.cart-items{flex:1;overflow:auto;margin:20px 0}.cart-line{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.cart-line small{display:block;color:var(--muted);margin-top:4px}.qty{display:flex;align-items:center;gap:8px;margin-top:7px}.qty button{border:1px solid var(--line);background:#fff;border-radius:6px;width:25px;height:25px}.cart-total{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;font-weight:850;font-size:18px}.empty{color:var(--muted);text-align:center;padding:35px 10px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);background:#101828;color:white;padding:12px 18px;border-radius:12px;z-index:20;opacity:0;pointer-events:none;transition:.25s;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;padding:55px 0}.showcase{min-height:300px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.benefit-grid{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:430px){.grid{gap:10px}.product-art{height:135px;font-size:51px}.product-info{padding:12px}.product h3{font-size:13px}.price{font-size:15px}.add{padding:8px}.hero h1{letter-spacing:-1.5px}.ticks{grid-template-columns:1fr}.topbar .wrap{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>⚡ Your everyday tech, made easier</span><span>Gadgets • Accessories • Electronics</span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">A</span><span>Allan Gadgets<small>& Electronics</small></span></a>
+<nav class="navlinks"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<button class="cartbtn" id="openCart">Cart <span id="cartCount">0</span></button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="eyebrow">✦ Welcome to Allan Gadgets</span><h1>Upgrade your world with <em>smart tech.</em></h1><p>Explore everyday gadgets, phone accessories and electronics picked to keep you connected, powered and ready for what’s next.</p>
+<div class="hero-actions"><a class="primary" href="#products">Explore products ↗</a><a class="secondary" href="#contact">Ask us a question</a></div>
+<div class="hero-points"><span>✓ <b>Easy enquiries</b></span><span>✓ <b>Product discovery</b></span><span>✓ <b>Friendly service</b></span></div></div>
+<div class="showcase"><div class="orb"><div class="device"><span>✦</span></div></div><div class="float-card fc1">⚡ Power up<small>Chargers & power banks</small></div><div class="float-card fc2">🎧 Stay connected<small>Audio & accessories</small></div></div>
+</div></section>
+<section class="benefits"><div class="wrap benefit-grid">
+<div class="benefit"><div class="benefit-icon">📱</div><div><b>Everyday essentials</b><small>Useful tech for daily life</small></div></div>
+<div class="benefit"><div class="benefit-icon">🔎</div><div><b>Browse with ease</b><small>Search and explore products</small></div></div>
+<div class="benefit"><div class="benefit-icon">💬</div><div><b>Simple enquiries</b><small>Ask about price and availability</small></div></div>
+</div></section>
+<section class="products" id="products"><div class="wrap">
+<div class="section-head"><div><div class="kicker">Shop the collection</div><h2>Popular gadgets</h2><p>Find your next everyday tech essential.</p></div></div>
+<div class="tools"><input class="search" id="search" type="search" placeholder="Search gadgets and accessories…" aria-label="Search products"><div class="filters" id="filters"><button class="filter active" data-category="All">All items</button><button class="filter" data-category="Audio">Audio</button><button class="filter" data-category="Power">Power</button><button class="filter" data-category="Accessories">Accessories</button><button class="filter" data-category="Smart devices">Smart devices</button></div></div>
+<div class="grid" id="productGrid"></div><p class="note">Product names, sample prices and availability are examples for the website demo. Update them before accepting real orders.</p>
+</div></section>
+<section class="about" id="about"><div class="wrap about-grid"><div><div class="kicker">About our store</div><h2>Tech that fits your everyday life.</h2><p>Allan Gadgets & Electronics is a customer-focused gadget store concept for discovering useful electronics and accessories. Browse the collection, build a cart and send an enquiry to confirm current prices, stock and delivery options.</p><div class="ticks"><div class="tick"><span>✓</span>Helpful product enquiries</div><div class="tick"><span>✓</span>Easy browsing</div><div class="tick"><span>✓</span>Mobile-friendly design</div><div class="tick"><span>✓</span>Clear order summary</div></div></div>
+<div class="about-card"><div class="big">⌁</div><div><h3>Find your next favourite gadget.</h3><p>Have a product in mind? Send us an enquiry and we can help you get started.</p><a href="#contact" class="secondary" style="display:inline-block">Contact the store →</a></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div class="contact-info"><div class="kicker">Get in touch</div><h2>Let's talk tech.</h2><p>Want to check a price, ask about a product or discuss an order? Send a message using the form. The form opens your email app with the enquiry prepared.</p>
+<div class="contact-item"><div class="ico">✉️</div><div><b>Email</b><small>Set your store email in the website file before publishing.</small></div></div>
+<div class="contact-item"><div class="ico">📍</div><div><b>Location & delivery</b><small>Add your service area and delivery details here.</small></div></div>
+<div class="contact-item"><div class="ico">🕘</div><div><b>Opening hours</b><small>Add your business hours here.</small></div></div></div>
+<form class="form" id="contactForm"><h3>Send an enquiry</h3><label for="customerName">Your name</label><input id="customerName" required placeholder="Enter your name"><label for="customerEmail">Your email</label><input id="customerEmail" type="email" required placeholder="you@example.com"><label for="subject">What do you need?</label><select id="subject"><option>Product enquiry</option><option>Bulk order</option><option>Delivery question</option><option>Other</option></select><label for="message">Message</label><textarea id="message" required placeholder="Tell us what you're looking for…"></textarea><button class="primary" type="submit">Prepare email enquiry ↗</button><p class="form-note">Before launch, replace the demo email address in the website code with your real business email. No information is sent to a server by this demo page.</p></form>
+</div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> Allan Gadgets & Electronics. All rights reserved.</span><span>Built for everyday tech. <a href="#home">Back to top ↑</a></span></div></footer>
+<div class="cart-panel" id="cartPanel" aria-hidden="true"><div class="cart"><div class="cart-head"><h2>Your cart</h2><button class="close" id="closeCart" aria-label="Close cart">✕</button></div><div class="cart-items" id="cartItems"></div><div class="cart-total"><span>Total</span><span id="cartTotal">AED 0.00</span></div><button class="primary" id="checkout" style="margin-top:16px">Prepare order enquiry</button><p class="form-note">Sample prices only. Your order is not confirmed until the store confirms availability and final pricing.</p></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const products = [
+ {id:1,name:"Wireless Earbuds",category:"Audio",price:49,icon:"🎧",tag:"Popular",desc:"Compact audio for music and calls."},
+ {id:2,name:"Fast USB-C Charger",category:"Power",price:35,icon:"🔌",tag:"Essential",desc:"A handy charger for compatible devices."},
+ {id:3,name:"Portable Power Bank",category:"Power",price:59,icon:"🔋",tag:"Travel pick",desc:"Extra power when you're on the move."},
+ {id:4,name:"Bluetooth Speaker",category:"Audio",price:69,icon:"🔊",tag:"Popular",desc:"Portable sound for everyday listening."},
+ {id:5,name:"Phone Stand",category:"Accessories",price:19,icon:"📱",tag:"Desk pick",desc:"A simple stand for hands-free viewing."},
+ {id:6,name:"Smart Watch",category:"Smart devices",price:89,icon:"⌚",tag:"Trending",desc:"A wearable-style tech accessory."},
+ {id:7,name:"Wireless Mouse",category:"Accessories",price:29,icon:"🖱️",tag:"Work pick",desc:"A practical addition to your desk setup."},
+ {id:8,name:"LED Smart Bulb",category:"Smart devices",price:25,icon:"💡",tag:"Smart home",desc:"A smart-home lighting starter idea."}
+];
+let cart = {};
+let activeCategory = "All";
+const money = n => "AED " + Number(n).toFixed(2);
+function renderProducts(){
+ const q = document.getElementById("search").value.trim().toLowerCase();
+ const items = products.filter(p=>(activeCategory==="All"||p.category===activeCategory)&&(p.name+" "+p.category+" "+p.desc).toLowerCase().includes(q));
+ document.getElementById("productGrid").innerHTML = items.length ? items.map(p=>`<article class="product"><div class="product-art"><span class="tag">${p.tag}</span><span aria-hidden="true">${p.icon}</span></div><div class="product-info"><div class="product-category">${p.category}</div><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price-row"><span class="price">${money(p.price)}</span><button class="add" onclick="addToCart(${p.id})">+ Add</button></div></div></article>`).join("") : '<p>No products match your search. Try another word or category.</p>';
+}
+function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart();toast("Added to your cart");}
+function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];renderCart();}
+function renderCart(){
+ const count=Object.values(cart).reduce((a,b)=>a+b,0);
+ document.getElementById("cartCount").textContent=count;
+ const entries=Object.entries(cart);
+ document.getElementById("cartItems").innerHTML=entries.length?entries.map(([id,qty])=>{const p=products.find(x=>x.id===Number(id));return `<div class="cart-line"><div><b>${p.name}</b><small>${money(p.price)} each</small><div class="qty"><button onclick="changeQty(${p.id},-1)" aria-label="Remove one">−</button><span>${qty}</span><button onclick="changeQty(${p.id},1)" aria-label="Add one">+</button></div></div><b>${money(p.price*qty)}</b></div>`}).join(""):'<div class="empty">🛍️<h3>Your cart is empty</h3><p>Add a gadget to get started.</p></div>';
+ const total=entries.reduce((sum,[id,qty])=>sum+products.find(p=>p.id===Number(id)).price*qty,0);
+ document.getElementById("cartTotal").textContent=money(total);
+}
+function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),1800);}
+function toggleCart(open){document.getElementById("cartPanel").classList.toggle("open",open);document.getElementById("cartPanel").setAttribute("aria-hidden",String(!open));}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-category]");if(!b)return;activeCategory=b.dataset.category;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderProducts();});
+document.getElementById("search").addEventListener("input",renderProducts);
+document.getElementById("openCart").addEventListener("click",()=>toggleCart(true));
+document.getElementById("closeCart").addEventListener("click",()=>toggleCart(false));
+document.getElementById("cartPanel").addEventListener("click",e=>{if(e.target.id==="cartPanel")toggleCart(false)});
+document.getElementById("checkout").addEventListener("click",()=>{
+ const entries=Object.entries(cart);if(!entries.length){toast("Add a product first");return;}
+ const lines=entries.map(([id,qty])=>{const p=products.find(x=>x.id===Number(id));return `${p.name} x ${qty} — ${money(p.price*qty)}`});
+ const total=entries.reduce((sum,[id,qty])=>sum+products.find(p=>p.id===Number(id)).price*qty,0);
+ const body=`Hello Allan Gadgets & Electronics,%0D%0A%0D%0AI would like to enquire about:%0D%0A${encodeURIComponent(lines.join("\n"))}%0D%0A%0D%0ASample cart total: ${encodeURIComponent(money(total))}%0D%0APlease confirm availability, final prices and delivery.`;
+ window.location.href=`mailto:YOUR-STORE-EMAIL@example.com?subject=${encodeURIComponent("Product order enquiry")}&body=${body}`;
+});
+document.getElementById("contactForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const n=document.getElementById("customerName").value.trim(), em=document.getElementById("customerEmail").value.trim(), s=document.getElementById("subject").value, m=document.getElementById("message").value.trim();
+ const body=`Name: ${n}\nReply email: ${em}\nEnquiry type: ${s}\n\n${m}`;
+ window.location.href=`mailto:YOUR-STORE-EMAIL@example.com?subject=${encodeURIComponent("Website enquiry: "+s)}&body=${encodeURIComponent(body)}`;
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();renderCart();
+</script>
+</body></html>
